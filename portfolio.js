@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll(".animated-section");
-    const navLinks = document.querySelectorAll("nav ul li a");
+    const navLinks = document.querySelectorAll("a.nav-link");
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector("nav ul");
     

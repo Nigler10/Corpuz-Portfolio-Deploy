@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const words = [" I G E R", " I G H T", " I N J A"];
-    const textElement = document.getElementById("dynamic-text");
+    const textLogo = document.getElementById("dynamic-text-logo");
     const titleElement = document.getElementById("dynamic-title");
 
     let wordIndex = 0;
@@ -9,11 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function typeEffect() {
         const currentWord = words[wordIndex];
-        const displayText = "N" + currentWord.substring(0, letterIndex);
+        const partial = currentWord.substring(0, letterIndex);
 
-        if (textElement) textElement.innerHTML = displayText;
-
-        if (titleElement) titleElement.innerHTML = displayText;
+        if (textLogo) textLogo.innerHTML = partial;
+        if (titleElement) titleElement.innerHTML = "N" + partial;
 
         if (!isDeleting && letterIndex < currentWord.length) {
             letterIndex++;
