@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const words = [" I G E R", " I G H T", " I N J A", " I G E R U"];
+    const words = [" I G E R", " I G H T", " I N J A"];
     const textElement = document.getElementById("dynamic-text");
     const titleElement = document.getElementById("dynamic-title");
 
@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (!isDeleting && letterIndex < currentWord.length) {
             letterIndex++;
-            setTimeout(typeEffect, 500);
+            setTimeout(typeEffect, 250);
         } else if (isDeleting && letterIndex > 0) {
             letterIndex--;
-            setTimeout(typeEffect, 500);
+            setTimeout(typeEffect, 250);
         } else {
             isDeleting = !isDeleting;
             if (!isDeleting) {
